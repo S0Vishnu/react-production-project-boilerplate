@@ -17,14 +17,14 @@ Ensure you have the following installed on your system:
 
    ```bash
    git clone https://github.com/S0Vishnu/react-production-project-boilerplate.git
-   cd Dwinzo
+   cd react-production-project-boilerplate
    ```
 
    - Cloning repository with User Credentials:
 
    ```bash
    git clone https://your_username:password@github.com/S0Vishnu/react-production-project-boilerplate.git
-   cd Dwinzo
+   cd react-production-project-boilerplate
    ```
 
    note: if password contains special charecters use:
