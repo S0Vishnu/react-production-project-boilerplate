@@ -1,0 +1,60 @@
+{
+  // Compiler options for TypeScript
+  "compilerOptions": {
+    // Specify ECMAScript target version
+    "target": "ES6",
+    
+    // Specify library files to be included in the compilation
+    "lib": [
+      "dom",            // DOM library for web development
+      "dom.iterable",   // DOM iterable support
+      "esnext"          // Latest ECMAScript features
+    ],
+    
+    // Allow JavaScript files to be compiled
+    "allowJs": true,
+    
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+    
+    // Enables emit interoperability between CommonJS and ES Modules
+    "esModuleInterop": true,
+    
+    // Allow default imports from modules with no default export
+    "allowSyntheticDefaultImports": true,
+    
+    // Enable all strict type-checking options
+    "strict": true,
+    
+    // Force consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+    
+    // Report errors for fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true,
+    
+    // Specify module code generation
+    "module": "esnext",
+    
+    // Specify module resolution strategy
+    "moduleResolution": "node",
+    
+    // Include modules imported with .json extension
+    "resolveJsonModule": true,
+    
+    // Isolate each file in its own module
+    "isolatedModules": false,
+    
+    // Do not emit output files
+    "noEmit": true,
+    
+    // Specify JSX code generation
+    "jsx": "react-jsx"  // Use the new JSX transform from React 17+
+  },
+
+  // Specify the files to be included in the compilation
+  "include": [
+    "src",                     // Include all files in the src directory
+    "scripts",                 // Include all files in the scripts directory
+    "types/declarations.d.ts"  // Include custom type definitions
+  ]
+}

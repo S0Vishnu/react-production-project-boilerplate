@@ -1,0 +1,135 @@
+/* Default light theme (comes from the vue.css theme) */
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #323232;
+  color: #f2f2f2;
+}
+body.dark-theme .sidebar-toggle span {
+  background-color: #127efa;
+}
+body.dark-theme .markdown-section code,
+body.dark-theme .markdown-section pre {
+  background-color: #131313;
+  color: #f2f2f2;
+}
+
+/* Sidebar Dark Mode */
+body.dark-theme .sidebar {
+  background-color: #131313;
+  color: #f2f2f2;
+}
+body.dark-theme .sidebar ul li a {
+  color: #f2f2f2;
+}
+body.dark-theme .anchor span {
+  color: #f2f2f2;
+}
+body.dark-theme .sidebar ul li.active > a {
+  color: #1e90ff;
+}
+
+/* Change link colors in dark theme */
+body.dark-theme a {
+  color: #1e90ff;
+}
+
+/* Customize header (if needed) */
+body.dark-theme .header {
+  background-color: #232323;
+  color: #f2f2f2;
+}
+
+/* Optional: Customize any other element */
+body.dark-theme .content {
+  background-color: #323232;
+  color: #f2f2f2;
+  font-weight: 100;
+}
+
+body.dark-theme .markdown-section h1,
+body.dark-theme .markdown-section h2,
+body.dark-theme .markdown-section h3,
+body.dark-theme .markdown-section h4,
+body.dark-theme .markdown-section strong {
+  color: #e3e3e3;
+  font-weight: 600;
+}
+
+body.dark-theme .sidebar ul li a:hover::after {
+  background-color: #323232;
+}
+
+/* Other over written styles */
+
+.sidebar-toggle {
+  background: transparent;
+}
+.markdown-section code,
+.markdown-section pre {
+  border-radius: 8px;
+}
+.markdown-section code::after,
+.markdown-section pre::after {
+  display: none;
+}
+.content {
+  padding-top: 14px;
+}
+
+.sidebar-toggle {
+  top: 0;
+  height: fit-content;
+  width: fit-content;
+}
+.theme-toggle-container {
+  position: fixed;
+  top: 8px;
+  left: 38px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+.theme-toggle-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  margin: 0;
+  /* padding: 0 0 0 15px; */
+}
+.sidebar li {
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  background-color: #e5ebec;
+  z-index: -1;
+}
+.app-nav.no-badge {
+  margin: 8px;
+}
+.app-nav.no-badge ul {
+  padding: 0;
+  padding-right: 6px;
+}
+
+video {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}

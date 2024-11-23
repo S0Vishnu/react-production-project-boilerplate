@@ -1,0 +1,23 @@
+// local fonts imports and decleration
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/inter/inter18ptRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/poppinsRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/robotoRegular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-default;
+  color: var(--text-gray);
+}

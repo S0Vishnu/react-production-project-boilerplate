@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+
+    <!-- Docsify Vue Theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+
+    <!-- Link to your custom styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Docsify Search Plugin (Make sure it's the correct version) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-search@1.7.0/dist/docsify-search.min.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Docsify Script -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+    <!-- Docsify Search Plugin Script -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+    <!-- Docsify Image Preview Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+    <!-- Docsify Theme Toggle Button and Search Integration -->
+    <script>
+      window.$docsify = {
+        loadSidebar: true,
+        loadNavbar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+
+        search: {
+          insertBefore: ".sidebar-nav", // Ensure the search bar is placed before the sidebar-nav element
+          paths: "auto", // Automatically index all markdown files
+          placeholder: "Search documentation...", // Placeholder text
+          noData: "No results!", // Message when no results are found
+        },
+
+        plugins: [
+          function (hook, vm) {
+            // Function to add the theme toggle button
+            function addThemeToggle() {
+              const themeButtonHtml = `
+                <div class="theme-toggle-container">
+                  Theme :
+                  <button id="theme-toggle">🌙</button>
+                </div>
+              `;
+              // Append the theme button inside the sidebar or navbar
+              const sidebar = document.querySelector(".sidebar");
+              if (sidebar) {
+                sidebar.insertAdjacentHTML("beforebegin", themeButtonHtml);
+              }
+
+              // Handle the theme toggle functionality
+              const themeToggleBtn = document.getElementById("theme-toggle");
+              themeToggleBtn.addEventListener("click", () => {
+                // Toggle the dark-theme class
+                const isDark = document.body.classList.toggle("dark-theme");
+                themeToggleBtn.textContent = isDark ? "🌞" : "🌙";
+
+                // Optionally save the user's theme preference to localStorage
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+              });
+
+              // Check if there's a saved theme in localStorage
+              const savedTheme = localStorage.getItem("theme");
+              if (savedTheme === "dark") {
+                document.body.classList.add("dark-theme");
+                themeToggleBtn.textContent = "🌞"; // Set the button to indicate light theme
+              }
+            }
+
+            // Run the theme toggle setup after each page load
+            hook.afterEach(function (html) {
+              // Make sure the theme toggle button is added after the page content changes
+              if (!document.getElementById("theme-toggle")) {
+                addThemeToggle();
+              }
+            });
+          },
+        ],
+      };
+    </script>
+  </body>
+</html>

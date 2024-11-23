@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+echo "Running pre-commit hook..."
+
+# Compile TypeScript
+echo "Compiling TypeScript..."
+npx tsc scripts/validate-filenames.ts
+
+# if [ $? -ne 0 ]; then
+#     echo "TypeScript compilation failed. Aborting commit."
+#     exit 1
+# fi
+
+echo "TypeScript compilation successful."
+
+# Run Node.js script
+echo "Running Node.js script..."
+node scripts/validate-filenames.js --no-prompt
+
+if [ $? -ne 0 ]; then
+    echo "Node.js script failed. Aborting commit."
+    exit 1
+fi
+
+echo "Pre-commit hook completed successfully."

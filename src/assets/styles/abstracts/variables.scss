@@ -1,0 +1,31 @@
+@import "functions";
+
+// colors
+$primary-color: hsl(0, 0%, 100%);
+$text-gray: #969BA7;
+$selected-text-gray: #828282;
+$button-action-color: #5c87df;
+$button-abort-color: #ffffff;
+$secondary-color: #5c87df;
+$accent-color: #5c87df;
+$lite-gray-40: #d9d9d9;
+$lite-gray-80: #828282;
+$border-color: #c1c1c1;
+$border-color-20: #c1c1c133;
+$highlight-light-color: #f0f0f0;
+$button-hover-color: #e7e7e8;
+
+// icon colors
+$icon-idle-color: #5D5F63;
+
+//font sizes
+$font-size-small: get_rem(12);
+$font-size-default: get_rem(14);
+$font-size-title: get_rem(16);
+$font-size-header: get_rem(24);
+
+$font-weight-semi: 400;
+$font-weight-regular: 500;
+
+// Shadow
+$shadow-main: 0px 2px 10px 0px #0000001c;

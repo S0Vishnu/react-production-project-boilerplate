@@ -1,0 +1,11 @@
+@import "../abstracts/mixins";
+
+.flex {
+  @include flex-center;
+  gap: 14px;
+}
+.flex-sb {
+  top: 0;
+  @include flex-space-between;
+  gap: 4px;
+}
