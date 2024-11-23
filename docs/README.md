@@ -11,8 +11,8 @@ A **Boilerplate Project** designed to jumpstart your development process with a 
 
 ## Technologies Used
 
-- **Frontend**: [React, Angular, Vue.js, etc.]
-- **Backend**: [Node.js, Django, Flask, etc.]
+- **Frontend**: React
+- **Backend**: Node.js
 - **Database**: [MongoDB, PostgreSQL, MySQL, etc.]
-- **Build Tools**: [Webpack, Vite, etc.]
-- **Testing**: [Jest, Mocha, etc.]
+- **Build Tools**: Webpack
+- **Testing**: Jest
