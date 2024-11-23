@@ -6,6 +6,7 @@
 
 - [Git Commands](./documents/gitNotes.md)
 - [Notes and Guidlines](./documents/notes.md)
+- [Project Structure](./documents/projectStructure.md)
 - [How to Document](./documents/documentationGuide.md)
 - [How to Write a Markdown (.md)](./documents/markdownGuide.md)
 - [Docsify Overview](./documents/docsifyGuide.md)
