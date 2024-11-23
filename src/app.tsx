@@ -1,10 +1,8 @@
 import "./assets/styles/main.scss";
-import ConformationPopup from "./components/templates/modals/conformationPopup";
+import HomePage from "./pages/home";
 
-import Project from "./pages/project/project";
 function App() {
-  // return <ConformationPopup onClose={()=>{}} />;
-  return <Project />
+  return <HomePage />
 }
 
 export default App;
