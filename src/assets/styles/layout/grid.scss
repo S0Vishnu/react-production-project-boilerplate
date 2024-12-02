@@ -1,10 +1,10 @@
-@import "../abstracts/mixins";
+@use "../abstracts/mixins" as mixins;
 
 .flex {
-  @include flex-center;
+  @include mixins.flex-center;
   gap: 14px;
 }
 .flex-sb {
-  @include flex-space-between;
+  @include mixins.flex-space-between;
   gap: 4px;
 }

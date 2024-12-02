@@ -1,45 +1,45 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as color;
 
 [data-theme="light"] {
-  --primary-color: #{$primary-color};
-  --text-gray: #{$text-gray};
-  --text: #{$text};
-  --selected-text-gray: #{$selected-text-gray};
-  --button-action-color: #{$button-action-color};
-  --button-abort-color: #{$button-abort-color};
-  --secondary-color: #{$secondary-color};
-  --accent-color: #{$accent-color};
-  --lite-gray-40: #{$lite-gray-40};
-  --lite-gray-80: #{$lite-gray-80};
-  --border-color: #{$border-color};
-  --border-color-20: #{$border-color-20};
-  --highlight-light-color: #{$highlight-light-color};
-  --button-hover-color: #{$button-hover-color};
+  --primary-color: #{color.$primary-color};
+  --text-gray: #{color.$text-gray};
+  --text: #{color.$text};
+  --selected-text-gray: #{color.$selected-text-gray};
+  --button-action-color: #{color.$button-action-color};
+  --button-abort-color: #{color.$button-abort-color};
+  --secondary-color: #{color.$secondary-color};
+  --accent-color: #{color.$accent-color};
+  --lite-gray-40: #{color.$lite-gray-40};
+  --lite-gray-80: #{color.$lite-gray-80};
+  --border-color: #{color.$border-color};
+  --border-color-20: #{color.$border-color-20};
+  --highlight-light-color: #{color.$highlight-light-color};
+  --button-hover-color: #{color.$button-hover-color};
 
   //shadow variables
-  --shadow-main: #{$shadow-main};
+  --shadow-main: #{color.$shadow-main};
   
   //icon colors
-  --icon-idle-color: #{$icon-idle-color};
+  --icon-idle-color: #{color.$icon-idle-color};
   
 }
 
 [data-theme="dark"] {
-  --primary-color: #{$primary-color};
-  --text-gray: #{$text-gray};
-  --selected-text-gray: #{$selected-text-gray};
-  --button-action-color: #{$button-action-color};
-  --button-abort-color: #{$button-abort-color};
-  --secondary-color: #{$secondary-color};
-  --accent-color: #{$accent-color};
-  --lite-gray-40: #{$lite-gray-40};
-  --lite-gray-80: #{$lite-gray-80};
-  --border-color: #{$border-color};
-  --border-color-20: #{$border-color-20};
-  --highlight-light-color: #{$highlight-light-color};
+  --primary-color: #{color.$primary-color};
+  --text-gray: #{color.$text-gray};
+  --selected-text-gray: #{color.$selected-text-gray};
+  --button-action-color: #{color.$button-action-color};
+  --button-abort-color: #{color.$button-abort-color};
+  --secondary-color: #{color.$secondary-color};
+  --accent-color: #{color.$accent-color};
+  --lite-gray-40: #{color.$lite-gray-40};
+  --lite-gray-80: #{color.$lite-gray-80};
+  --border-color: #{color.$border-color};
+  --border-color-20: #{color.$border-color-20};
+  --highlight-light-color: #{color.$highlight-light-color};
 
   //shadow variables
-  --shadow-main: #{$shadow-main};
+  --shadow-main: #{color.$shadow-main};
 }
 
 #root {
@@ -53,30 +53,4 @@
   top: 0;
   left: 0;
   z-index: 99;
-}
-
-.selected,
-.select {
-  background-color: var(--secondary-color) !important;
-  color: var(--primary-color);
-  border-radius: 6px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-wrap: nowrap;
-  padding: 4px;
-  
-  .key {
-    color: var(--primary-color);
-  }
-
-  &:hover {
-    outline: none;
-    border: none;
-    background-color: var(--secondary-color);
-  }
-}
-
-
-.active {
-  color: var(--secondary-color) !important;
 }
