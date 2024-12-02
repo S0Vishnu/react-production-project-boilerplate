@@ -20,7 +20,7 @@ Ensure you have the following installed on your system:
    cd react-production-project-boilerplate
    ```
 
-   - Cloning repository with User Credentials:
+2. Cloning repository with User Credentials:
 
    ```bash
    git clone https://your_username:password@github.com/S0Vishnu/react-production-project-boilerplate.git
