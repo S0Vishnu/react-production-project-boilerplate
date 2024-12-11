@@ -84,7 +84,7 @@ Ensure you have the following installed on your system:
       npm run cypress:run
       ```
 
-### Run Docsify
+### Run Documentation(Docsify)
 
 1. Installation (if needed):
 
